@@ -1,0 +1,244 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom, #fffdf9, #fdf7f2);
+    color: #2c3e50;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #f94f6d, #ff7043); /* Gradient Background */
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 2px solid #f2e8dc;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #fff;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Text shadow */
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffe4b5;
+    font-style: italic;
+}
+
+header::after {
+    content: "❤️";
+    font-size: 24px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Destinations */
+.destinations {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 30px;
+    color: #ff6347; /* Vibrant red for headings */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.destinations h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #ffb74d; /* Gold color for decoration */
+    margin: 10px auto 0;
+}
+
+/* Destination cards */
+.destination-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.destination-item {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    width: 260px;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.destination-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.destination-item h3 {
+    margin: 15px 0;
+    font-size: 22px;
+    color: #ff7043; /* Bright orange color for the title */
+    transition: text-shadow 0.3s ease; /* Add smooth transition for shadow effect */
+}
+
+.destination-item:hover h3 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff7043; /* Match footer color with header gradient */
+    border-top: 1px solid #e0dcd3;
+    font-size: 14px;
+    color: white;
+}
+
+/* Floating Couple Emoji */
+.floating-emoji {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 32px;
+    animation: float 2.5s ease-in-out infinite;
+    z-index: 100;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Smooth Scrolling Effect */
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom, #fffdf9, #fdf7f2);
+    color: #2c3e50;
+    scroll-behavior: smooth;
+}
+
+/* Banner Section */
+.destination-banner {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner-overlay h2 {
+    font-size: 36px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.banner-overlay p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Card Layout */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ff7043; /* Vivid orange for titles */
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #ff7043; /* Vivid orange button */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #ff6347; /* Slightly darker shade on hover */
+}
+
+/* Make destination cards responsive for mobile */
+@media (max-width: 768px) {
+    .destination-list {
+        flex-direction: column; /* Stack items on small screens */
+        align-items: center; /* Center the cards */
+    }
+
+    .destination-item {
+        width: 90%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add space between cards */
+    }
+
+    .destination-banner h2 {
+        font-size: 28px;
+    }
+
+    .destination-banner p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
