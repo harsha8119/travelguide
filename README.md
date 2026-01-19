@@ -1,4 +1,4 @@
- Project Overview
+ Project Overview: 
 This project is a **static travel destinations website** developed using **HTML and CSS**.  
 The website provides information about popular international travel destinations, each presented on a separate, well-structured webpage.
 
